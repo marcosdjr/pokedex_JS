@@ -1,0 +1,82 @@
+body {
+  background-image: url("/img/wp-horizontal.jpg");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  width: 33vw;
+  height: auto;
+}
+
+p {color:blue;}
+
+.div-pkm {
+  width: 300px;
+  display: flex;
+  flex-direction:column;
+  border: 7px solid;
+  border-radius: 25px;
+  border-color: black;
+  background-color: white;
+  margin: 15px;
+}
+
+.div-img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction:column;
+}
+
+.div-field {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 25px;
+  color: yellow;
+  font-weight: bold;
+  text-shadow: 3px 3px gray;
+  margin-left: 15px;
+  -webkit-text-stroke: 0.5px gray;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1050px;
+
+}
+
+.insert-button {
+  margin: 1vw 0 1vw 0;
+  width: 150px;
+  font-size: 30px;
+  border-radius: 15px;
+  color: yellow;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgba(68, 68, 66, 0.815);
+  background-color: red;
+  text-shadow: 3px 3px gray;
+
+  
+  border: 7px solid;
+  border-radius: 25px;
+ 
+  border-color: black;
+}

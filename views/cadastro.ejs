@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/cadastro.css" />
+
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo-pdx-3.png" />
+    </header>
+    <main>
+      <section id="insert">
+        <h2>Registre o pokémon descoberto por você!</h2>
+        <form action="/pokedex" method="POST">
+          <div id="div-info">
+            <div class="div-field">
+              <label for="number">PokéNúmero: </label>
+              <input
+                type="text"
+                name="number"
+                id="number"
+                placeholder="Número do Pókemon"
+                required
+              />
+            </div>
+
+            <div class="div-field">
+              <label for="name">PokéNome: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nome do Pokémon"
+                required
+              />
+            </div>
+
+            <div class="div-field">
+              <label for="name">PokéTipo: </label>
+              <input
+                type="text"
+                name="type"
+                id="type"
+                placeholder="Tipo do Pokémon"
+                required
+              />
+            </div>
+
+            <div class="div-field">
+              <label for="image">PokéFoto: </label>
+              <input
+                type="text"
+                name="image"
+                id="image"
+                placeholder="Link da Foto/Imagem do Pokémon"
+                required
+              />
+            </div>
+
+            <div class="div-field">
+              <label for="description">PokéDescrição: </label>
+              <input
+                type="text"
+                name="description"
+                id="description"
+                placeholder="Descrição do Pokémon"
+                required
+              />
+            </div>
+
+            <div class="div-field">
+              <label for="height">PokéAltura: </label>
+              <input
+                type="text"
+                name="height"
+                id="height"
+                placeholder="Altura do Pokémon"
+                required
+              />
+            </div>
+
+            <div class="div-field">
+              <label for="weight">PokéPeso: </label>
+              <input
+                type="text"
+                name="weight"
+                id="weight"
+                placeholder="Peso do Pokémon"
+                required
+              />
+            </div>
+
+            <div class="div-field">
+              <label for="category">PokéCategoria: </label>
+              <input
+                type="text"
+                name="category"
+                id="category"
+                placeholder="Categoria do Pokémon"
+                required
+              />
+            </div>
+
+            <div class="div-field">
+              <label for="ability">PokéHabilidade: </label>
+              <input
+                type="text"
+                name="ability"
+                id="ability"
+                placeholder="Habilidade do Pokémon"
+                required
+              />
+            </div>
+          </div>
+          <button id="insert-button" type="submit">Cadastrar</button>
+        </form>
+        <div id="div-buttons"></div>
+        <a href="/">  
+          <button class="insert-button">Voltar</button>
+        </a>
+      </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>
+        Esta é uma aplicação de caráter estudantil. Não detemos direitos
+        autorais das imagens, tampouco é utilizada para fins comerciais.
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+
+    @RenderSection("Scripts", required: false)
+  </body>
+</html>

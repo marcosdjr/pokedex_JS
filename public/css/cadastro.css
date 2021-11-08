@@ -1,0 +1,125 @@
+body {
+  background-image: url("/img/wp-vertical-edit.jpg");
+
+  /* background-repeat: no-repeat; */
+  background-size:contain;
+  background-position:initial;
+  background-attachment: fixed;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  color: yellow;
+  font-size: 55px;
+  font-weight: bold;
+  text-shadow: 3px 3px gray;
+  margin-left: 15px;
+  -webkit-text-stroke: 0.5px gray; 
+}
+
+header img {
+  width: 33vw;
+  height: auto;
+}
+
+p {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  
+}
+
+#div-info {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  text-align: center;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 60vw;
+
+}
+
+.div-field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 15px 15px 15px 15px;
+  /* background-color: #ffffff10;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 25px; */
+}
+
+.div-field label {
+ color: yellow;
+ text-align: left;
+ font-size: 35px;
+ font-weight: bold;
+ text-shadow: 3px 3px gray;
+ margin-left: 15px;
+ -webkit-text-stroke: 0.5px gray; 
+}
+
+.div-field input {
+  width: 350px;
+  height: 30px;
+  border: 7px solid;
+  border-radius: 25px;
+  font-size: 20px;
+  padding-left: 8px;
+ }
+
+ #insert-button {
+  margin: 1vw 0 1vw 0;
+  width: 300px;
+  font-size: 60px;
+  border-radius: 15px;
+  color: yellow;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgba(68, 68, 66, 0.815);
+  background-color: white;
+  text-shadow: 3px 3px gray;
+
+  
+  border: 7px solid;
+  border-radius: 25px;
+ 
+  border-color: black;
+}
+
+
+.insert-button {
+  margin: 1vw 0 1vw 0;
+  width: 150px;
+  font-size: 30px;
+  border-radius: 15px;
+  color: yellow;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgba(68, 68, 66, 0.815);
+  background-color: red;
+  text-shadow: 3px 3px gray;
+
+  border: 7px solid;
+  border-radius: 25px;
+
+  border-color: black;
+}

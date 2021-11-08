@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo-pdx-3.png" />
+    </header>
+    <main>
+      <section>
+        <!-- <div class="div-pkm">
+          <div class="div-img">
+            <img src="./img/logo-pdx-3.png" />
+          </div>
+          <div class="div-field">
+            <h2 for="name">PokéNome:</h2>
+            <h2 for="type">PokéTipo:</h2>
+          </div>
+        </div>
+        <div class="div-pkm">
+            <div class="div-img">
+              <img src="./img/logo-pdx-3.png" />
+            </div>
+            <div class="div-field">
+              <h2 for="name">PokéNome:</h2>
+              <h2 for="type">PokéTipo:</h2>
+            </div>
+          </div>
+          <div class="div-pkm">
+            <div class="div-img">
+              <img src="./img/logo-pdx-3.png" />
+            </div>
+            <div class="div-field">
+              <h2 for="name">PokéNome:</h2>
+              <h2 for="type">PokéTipo:</h2>
+            </div>
+          </div> -->
+          
+          <% pokemon.map ( pkn => { %>
+            <div class="div-pkm">
+                <div class="div-img">
+                  <img 
+                  src="<%= pkn.image %>" 
+                  alt="<%= pkn.name %>" 
+                  />
+                </div>
+                <div class="div-field">
+                  <h2 for="name"> PokéNome: <%= pkn.name %> </h2>
+                  <h2 for="type"> PokéTipo: <%= pkn.type %> </h2>
+                </div>
+                        
+            </div>
+                <% }) %>
+
+      </section>
+    </main>
+    <div id="div-buttons">
+      <a href=/cadastro>
+        <button class="insert-button" type="submit">Cadastro</button>
+      </a>
+      </div>
+    <footer>
+      <p>
+        Esta é uma aplicação de caráter estudantil. Não detemos direitos
+        autorais das imagens, tampouco é utilizada para fins comerciais.
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
