@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/detalhes.css" />
+
+    <title>Detalhes</title>
+  </head>
+  <body>
+    <header>
+      <img src="../img/logo-pdx-3.png" />
+    </header>
+    <main>
+      <section id="insert">
+        <% pokemon.map ( pkn => { %>
+
+        <h1 id="">Nome: <%= pkn.name %></h1>
+        <img id="image" src=<%= pkn.image %> alt="imagem" />
+
+        <!-- <form action="/subscription" method="POST"> -->
+        <div id="div-info">
+          <section>
+            <div class="details">
+              <div class="div-field">
+                <div class="div-field-inter">
+                  <h2 for="number">PokéNúmero: <%= pkn.number %></h2>
+                  <h2 for="height">PokéAltura: <%= pkn.height %></h2>
+                  <h2 for="weight">PokéPeso: <%= pkn.weight %></h2>
+                  <h2 for="name">PokéTipo: <%= pkn.type %></h2>
+                  <h2 for="category">PokéCategoria: <%= pkn.category %></h2>
+                  <h2 for="ability">PokéHabilidade: <%= pkn.ability %></h2>
+                </div>
+                <div class="div-field-description">
+                <h2 for="description">PokéDescrição: <%= pkn.description %></h2>
+            </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <% }) %>
+
+        <div id="div-buttons">
+          <a href="/">  
+          <button class="insert-button" type="submit">Voltar</button>
+        </a>
+            <a href=/cadastro>
+          <button class="insert-button" type="submit">Cadastro</button>
+        </a>
+        </div>
+        <!-- </form> -->
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Esta é uma aplicação de caráter estudantil. Não detemos direitos
+        autorais das imagens, tampouco é utilizada para fins comerciais.
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

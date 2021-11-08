@@ -1,0 +1,27 @@
+{
+  "name": "pokedex_js",
+  "version": "1.0.0",
+  "description": "Pokedex em JS, HTML e CSS, onde o usuário pode cadastrar pokémons e seus atributos.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosdjr/pokedex_JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcosdjr/pokedex_JS/issues"
+  },
+  "homepage": "https://github.com/marcosdjr/pokedex_JS#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
