@@ -148,3 +148,7 @@ form {
 
   border-color: black;
 }
+
+a {
+  text-decoration: none;
+}
