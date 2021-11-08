@@ -5,6 +5,8 @@ const app = express();
 const port = process.env.PORT || 3001;
 //const port = 3001;
 
+let message = "";
+
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded());
@@ -53,9 +55,15 @@ var pokedex = [
 // });
 
 app.get("/", (req, res) => {
+
+  setTimeout(() => {
+    message = "";
+  }, 5000);
+
   res.render("index", {
     pokemon: pokedex,
-  }); // Nome do arquivo, o EJS já busca dentro da pasta views.
+    message
+  }); 
 });
 
 app.get("/detalhes", (req, res) => {
@@ -69,6 +77,7 @@ app.get("/detalhes", (req, res) => {
 // });
 
 app.get("/cadastro", (req, res) => {
+    
   res.render("cadastro");
 });
 
@@ -110,6 +119,8 @@ app.post("/pokedex", (req, res) => {
 
   pokedex.push(poke);
   res.redirect("/");
+
+  message = "Pokémon inserido na Pokédex!!!";
 });
 
 app.get("/detalhes/:number", (req, res) => {

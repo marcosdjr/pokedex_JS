@@ -11,6 +11,11 @@
   </head>
   <body>
     <header>
+      <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+      <% }  %>
       <img src="./img/logo-pdx-3.png" />
     </header>
     <main>
@@ -45,6 +50,7 @@
           
           <% pokemon.map ( pkn => { %>
             <div class="div-pkm">
+              <a href='/detalhes/<%= pkn.number %>'>
                 <div class="div-img">
                   <img 
                   src="<%= pkn.image %>" 
@@ -55,7 +61,7 @@
                   <h2 for="name"> PokéNome: <%= pkn.name %> </h2>
                   <h2 for="type"> PokéTipo: <%= pkn.type %> </h2>
                 </div>
-                        
+             </a>           
             </div>
                 <% }) %>
 
@@ -72,6 +78,6 @@
         autorais das imagens, tampouco é utilizada para fins comerciais.
       </p>
     </footer>
-    <script src="./script.js"></script>
-  </body>
+    <script src="/js/script.js"></script> 
+   </body>
 </html>
